@@ -1,6 +1,7 @@
 // Chiedo quanti km deve percorrere utente
 const km = prompt ("Quanti km devi percorrere?");
 console.log(km);
+// da inserire funzione isNaN per check inserimento numeri e non lettere
 
 // Chiedo quanti anni ha utente
 const age = prompt ("Quanti anni hai?");
@@ -17,7 +18,7 @@ let sconto20 = parzialTicket * 0.2;
 let sconto40 = parzialTicket * 0.4;
 
 
-// faccio uscire la variabile dalla condizione di se
+// faccio uscire la variabile dalla condizione di se: SCOPE
 let priceTicket = 0;
 
 // Calcolo del prezzo del biglietto
@@ -31,4 +32,4 @@ if (age < 18) {
 
 
 // Comunico all'utente la cifra
-document.getElementById ("prezzo").innerHTML = priceTicket.toFixed(2);
+document.getElementById ("prezzo").innerHTML = priceTicket.toFixed(2) + " €";
