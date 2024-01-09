@@ -8,8 +8,8 @@ console.log(age)
 
 
 //Applico sconto se rispetta alcuni parametri
-var sconto20 = priceTicket * 0,2
-var sconto40 = priceTicket * 0,4
+let sconto20 = priceTicket * 0,2
+let sconto40 = priceTicket * 0,4
 
 
 //Calcolo del prezzo del biglietto
@@ -21,3 +21,4 @@ if (age < 18) {
     var priceTicket = priceTicket
 }
 
+document.getElementById ("prezzo").innerHTML = priceTicket
