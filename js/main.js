@@ -6,19 +6,24 @@ console.log(km)
 const age = prompt ("Quanti anni hai?")
 console.log(age)
 
+//Il calcolo parziale del biglietto
+const parzialTicket = km * age
+console.log(parziale)
+
 
 //Applico sconto se rispetta alcuni parametri
-let sconto20 = priceTicket * 0,2
-let sconto40 = priceTicket * 0,4
+let sconto20 = parzialTicket * 0.2
+let sconto40 = parzialTicket * 0.4
 
 
 //Calcolo del prezzo del biglietto
 if (age < 18) {
-    var priceTicket = priceTicket - sconto20;
+    let priceTicket = parzialTicket - sconto20;
 } else if (age > 65) {
-    var priceTicket = priceTicket - sconto40;
+    let priceTicket = parzialTicket - sconto40;
 } else {
-    var priceTicket = priceTicket
+    let priceTicket = priceTicket
 }
 
+//Comunico all'utente la cifra
 document.getElementById ("prezzo").innerHTML = priceTicket
