@@ -1,25 +1,26 @@
 // Chiedo quanti km deve percorrere utente
 const km = prompt ("Quanti km devi percorrere?");
-console.log(km)
+console.log(km);
 
 // Chiedo quanti anni ha utente
 const age = prompt ("Quanti anni hai?");
-console.log(age)
+console.log(age);
 
 
-//Il calcolo parziale del biglietto
+// Il calcolo parziale del biglietto
 const parzialTicket = km * 0.21;
-console.log(parzialTicket)
+console.log(parzialTicket);
 
 
-//Applico sconto se rispetta alcuni parametri
+// Applico sconto se rispetta alcuni parametri
 let sconto20 = parzialTicket * 0.2;
 let sconto40 = parzialTicket * 0.4;
 
 
+// faccio uscire la variabile dalla condizione di se
 let priceTicket = 0;
 
-//Calcolo del prezzo del biglietto
+// Calcolo del prezzo del biglietto
 if (age < 18) {
     priceTicket = parzialTicket - sconto20;
 } else if (age > 65) {
@@ -29,5 +30,5 @@ if (age < 18) {
 }
 
 
-//Comunico all'utente la cifra
-document.getElementById ("prezzo").innerHTML = priceTicket;
+// Comunico all'utente la cifra
+document.getElementById ("prezzo").innerHTML = priceTicket.toFixed(2);
